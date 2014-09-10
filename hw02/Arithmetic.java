@@ -23,8 +23,15 @@ public class Arithmetic{
     double envelopeCost$=3.25; // The cost of each box of envelopes.
     double totalEnvelopeCost$=3.25; // The total cost of the boxes of envelopes.
     double taxPercent=0.06; // The PA sales tax.
-    double totalCost, totalSalesTax;
-    
+    double totalCost, totalSalesTax, roundSalesTax, roundTotal; //The total sales tax rounded and unrounded.
+  
+    totalCost=totalSockCost$+totalGlassCost$+totalEnvelopeCost$; //The total cost of items.
+    totalSalesTax=totalSockCost$*taxPercent+totalGlassCost$*taxPercent+totalEnvelopeCost$*taxPercent; // The total sales tax.
+    roundSalesTax=Math.round(100*totalSalesTax); // The rounded total sales tax.
+    roundTotal=Math.round(100*totalCost); // The rounded total cost.
+  
+  
+    // Print of the following data.
     System.out.println("The cost of one sock is " +(sockCost$)+".");
     System.out.println("The cost of one drinking glass "+(glassCost$)+".");
     System.out.println("The cost of one box of envelopes is "+(envelopeCost$)+".");
@@ -32,12 +39,10 @@ public class Arithmetic{
     System.out.println("The total cost of drinking glasses without tax was "+(totalGlassCost$)+".");
     System.out.println("The total cost of envelopes without tax was "+(totalEnvelopeCost$)+".");
     System.out.println("The total cost is "+(totalSockCost$+totalGlassCost$+totalEnvelopeCost$)+".");
-    System.out.println("The total sales tax is "+(totalSockCost$*taxPercent+totalGlassCost$*taxPercent+totalEnvelopeCost$*taxPercent)+".");
+    System.out.println("The total sales tax is "+roundSalesTax/100+".");
     
-    totalCost=totalSockCost$+totalGlassCost$+totalEnvelopeCost$; //The total cost of items.
-    totalSalesTax=totalSockCost$*taxPercent+totalGlassCost$*taxPercent+totalEnvelopeCost$*taxPercent; // The total sales tax.
-
-    System.out.println("The total cost of items with tax "+(totalCost+totalSalesTax)+".");
+    
+    System.out.println("The total cost of items with tax "+roundTotal/100+".");
     
     }
     
