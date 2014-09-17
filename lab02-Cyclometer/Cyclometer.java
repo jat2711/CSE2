@@ -1,7 +1,7 @@
-////////////////////
+ ////////////////////
 //Joanna Targowski
 //Cyclometer Java Program
-//My bicycle cyclometer records two kinds of data and the program should the distance and amount of time it takes for each trip.
+//My bicycle cyclometer records two kinds of data and the program should dispute the  distance and amount of time it takes for each trip.
 //
 //  first compile program
 //      javac Cyclometer.java

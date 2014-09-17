@@ -13,6 +13,8 @@ public class Arithmetic{
     
 //  add main method
     public static void main (String[] args) {
+    
+    
     int nSocks=3; // The number of pairs of socks.
     double sockCost$=2.58; // The cost per pairs of socks. ('S' is part of the variable name)
     double totalSockCost$=7.74; // The total cost of socks.
