@@ -25,7 +25,7 @@ import java.util.Scanner;
         double guess3=(2*guess2*guess2*guess2+x)/(3*guess2*guess2); // Guess number 3 for the cubed root.
         double guess4=(2*guess3*guess3*guess3+x)/(3*guess3*guess3); // Guess number 4 for the cubed root.
         double guess5=(2*guess4*guess4*guess4+x)/(3*guess4*guess4); // Guess number 5 for the cubed root.
-        double guess6=(2*guess5*guess5*guess5+x)/(3*guess5*guess5); // Guess number 6 for th cubed root.
+        double guess6=(2*guess5*guess5*guess5+x)/(3*guess5*guess5); // Guess number 6 for the cubed root.
         double cubed=(guess6*guess6*guess6);  // Cubing the number.
 
 //Print out the following information.
