@@ -14,10 +14,16 @@ import java.util.Scanner;
 public class CourseNumber{
     
 //  add main method 
-        public static void main(String[]) { 
+        public static void main(String[] args) { 
             
         Scanner myScanner;
-        myScanner=new Scanner (System.in)
+        myScanner=new Scanner (System.in);
+        
+        System.out.println("Enter a six digit number giving the course semester."); // Asks the user to enter a six digit number.
+        int digit=myScanner.nextInt();
+        // Start calculations
+        
+        
 
 } // end of main method 
 } // end of class
