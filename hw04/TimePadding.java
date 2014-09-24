@@ -15,10 +15,34 @@ import java.util.Scanner;
 public class TimePadding{
     
 //  add main method 
-        public static void main(String[]) { 
+        public static void main(String[] args) { 
             
         Scanner myScanner;
-        myScanner=new Scanner (System.in)
+        myScanner=new Scanner (System.in);
+        
+        System.out.println("Enter a positive integer giving the number that have passed during the day.");  // Asks the user to enter a positive integer. 
+        int totalSec=myScanner.nextInt();
+        // Starting calculations. 
+        int sec, totalMin, min, hours; // Declaring variables.
+        sec=totalSec%60; // Leftover seconds
+        totalMin=totalSec/60; // The total minutes.
+        min=totalMin%60; // Leftover minutes. 
+        hours= totalMin/60; // The amount of hours.
+        
+        // Print out following statement.
 
+        if (sec<10 && min<10) {
+                System.out.println("The time is " +hours+":0" +min+":0"+sec); 
+        }
+        if (sec<10 && !(min<10)) {
+                System.out.println("The time is " +hours+":" +min+":0"+sec); 
+        }
+        if (!(sec<10) && min<10) {
+                System.out.println("The time is " +hours+":0" +min+":"+sec); 
+        }
+        if (sec>=10 && min>=10) {
+                System.out.println("The time is " +hours+":" +min+":"+sec); 
+        }
+        
 } // end of main method 
 } // end of class
