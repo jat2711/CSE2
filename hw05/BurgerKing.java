@@ -79,11 +79,6 @@ public class BurgerKing{
         
                                 
         } // end of Order switch statement             
-                    
-
-        
-        // System.out.println("A single character expected."); return; 
-                
     
         
 } // end of main method
