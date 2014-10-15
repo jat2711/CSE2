@@ -13,55 +13,57 @@
 //define class
 public class Roulette {
     
-//  add main method
-        public static void main(String[] args) {
+    //  add main method
+    public static void main(String[] args) {
 
 
-    double nPlayer= (int)(Math.random()*38); 
-    int num1= 0;
-    int num2=0;
-    int wins=0;
-    int loss=0;
-    int profit=0;
-    int totalwins=0;
- 
- // The amount of times I play the game. 
- 
-    while (num2<1000) {
-    
-   // The outcome everytime it spins 100 times. 
-  
-    while (num1<100) {
-        double spin=(int) (Math.random()*38); 
+        double nPlayer= (int)(Math.random()*38); 
+        int num1=0;
+        int num2=0;
+        int wins=0;
+        int loss=0;
+        int totalWinnings=0;
+        int totalwins=0;
       
-        if (nPlayer==spin) {
-            wins ++;
+        // The amount of times I play the game. 
+     
+        while (num2<1000) {
+
+           // The outcome everytime it spins 100 times. 
           
-        } // end of if statement
-            num1++; 
-    } // end of nested loop 
-    
-     if (wins>2) {
-            totalwins++;
-            profit=(-100+(wins*36));
-        }
-        else if (0<wins && wins<2) {
-            profit+=(-100+(wins*36));
-        } 
-        else if (0==wins) {
-            loss++;
-            profit-=100;
-        }
+            while (num1<100) {
+                double spin=(int) (Math.random()*38); 
+            
+                if (nPlayer==spin) {
+                    wins++;
+                  
+                } // end of if statement
+                num1++; 
+            } // end of nested loop 
+            
+            if (wins>2) {
+                totalwins++;
+                totalWinnings+=(wins*36);
+                
+            }
+            if (0<wins && wins<2) {
+                totalWinnings+=(wins*36);
+              
+            } 
+            if (0==wins) {
+                loss++;
         
-    num2++;
-    wins=0; 
-   
-    } // end of loop
-    
-   System.out.println("The amount of total wins: " +totalwins);
-   System.out.println("The amount of losses: " +loss);
-   System.out.println("The total amount of profit: " +profit);
-    
-    
-} // end of main method
+            }
+            
+            num2++;
+            num1=0;
+            wins=0; 
+           
+        } // end of loop
+        
+        System.out.println("The amount of total wins: " +totalwins);
+        System.out.println("The amount of losses: " +loss);
+        System.out.println("The total amount of total winnings: $" +totalWinnings);
+        
+    } // end of main method
 } // end of class
