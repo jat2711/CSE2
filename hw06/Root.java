@@ -19,20 +19,32 @@ public class Root {
     Scanner myScanner;
     myScanner=new Scanner (System.in);
     
-    double x;
-    double high;
-    double low=0;
-     
-     if (myScanner.hasNextDouble()) {
-         x=myScanner.nextDouble();
-         high=x+1;
-         
-    while (high-low>0.0000001*(1+x)) {
-        double middle=(high+low)/2;
     
+         System.out.println("Enter a double that is >0 ");
+            
+            double x=myScanner.nextDouble();;
+            double high=x+1;
+            double low=0;
+            
+    
+    double middle=(high+low)/2; 
+    while ((high-low)>0.0000001*high) {
+
+    if (middle>x) {
+        high=middle;
+    } // end of if statement
+    
+    if (middle<x) {
+        low=middle;
+        
+    } // end of if statement
     } // end of while statement
     
-     } // end of if statement
+      System.out.println("The square root is" +middle);
+      
+    
+    
+     
 
 } // end of main method
 } // end of class
