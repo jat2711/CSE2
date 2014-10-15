@@ -15,3 +15,25 @@ public class Root {
     
 //  add main method
         public static void main(String[] args) {
+
+    Scanner myScanner;
+    myScanner=new Scanner (System.in);
+    
+    double x;
+    double high;
+    double low=0;
+     
+     if (myScanner.hasNextDouble()) {
+         x=myScanner.nextDouble();
+         high=x+1;
+         
+    while (high-low>0.0000001*(1+x)) {
+        double middle=(high+low)/2;
+    
+    } // end of while statement
+    
+     } // end of if statement
+
+} // end of main method
+} // end of class
+    
