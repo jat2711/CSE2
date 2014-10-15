@@ -19,16 +19,14 @@ public class Root {
     Scanner myScanner;
     myScanner=new Scanner (System.in);
     
-    
          System.out.println("Enter a double that is >0 ");
             
             double x=myScanner.nextDouble();;
             double high=x+1;
             double low=0;
+            double middle=(high+low)/2; 
             
-    
-    double middle=(high+low)/2; 
-    while ((high-low)>0.0000001*high) {
+    while ((high-low)<0.0000001*high) {
 
     if (middle>x) {
         high=middle;
