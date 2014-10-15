@@ -24,25 +24,29 @@ public class Root {
             double x=myScanner.nextDouble();;
             double high=x+1;
             double low=0;
-            double middle=(high+low)/2; 
+            double middle=0;
             
-    while ((high-low)<0.0000001*high) {
+    while (true) {
+        middle=(high+low)/2; 
+        double middle2=middle*middle;
 
-    if (middle>x) {
+    if (middle2>x) {
         high=middle;
     } // end of if statement
     
-    if (middle<x) {
+    if (middle2<x) {
         low=middle;
+    
+    } // end of if statement
+
+    if ((high-low)<0.0000001) {
+        break; // stops the loop if statement is true
         
     } // end of if statement
     } // end of while statement
     
-      System.out.println("The square root is" +middle);
+      System.out.println("The square root is " +middle);
       
-    
-    
-     
 
 } // end of main method
 } // end of class
