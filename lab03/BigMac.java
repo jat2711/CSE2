@@ -5,7 +5,7 @@
 // It will show how many Big Macs, the cost per Big Mac, and the percentage tax depending on the state, and the total cost. 
 
 //  first compile program 
-        javac BigMac.java
+//      javac BigMac.java
 //  run the program 
 //      java BigMac//
 
