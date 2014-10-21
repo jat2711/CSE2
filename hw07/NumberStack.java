@@ -22,15 +22,16 @@ public class NumberStack {
          System.out.println("Enter a number between 1 and 9");
          
             int x=myScanner.nextInt();
-            int y=1;
-            int i;
             int c;
-        for(c=0;c==x;c++){
-            System.out.println(); 
-            for (i=0;i==(x*x-1);i++){
-             System.out.print(y);
-            } // end of for loop
-            y=y+1;
+            int i;
+        for (x=1; x<10; x++) {
+           System.out.println("-"); 
+                for(c=0;c<x;c++){
+                    System.out.println(+x);
+            }
+            //for (i=1;i<c;i++)
+                        //System.out.println(+c);
+            
         } // end of for loop
 } // end of main method
 }// end of public class
